@@ -1,0 +1,399 @@
+:root {
+  --mhdev-main: #a18cb8;
+  --mhdev-brown: #665959;
+  --mhdev-white: #f8f8f8;
+  --mhdev-beige: #F0E5DC;
+  --mhdev-light-purple: #e0d3ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: -webkit-fill-available;
+  font-family: "KoHo", serif;
+  font-weight: 400;
+  text-align: center;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
+  display: flex; 
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+nav {
+  font-size: 1em;
+}
+
+h6 {
+  font-family: "Arvo", sans-serif;
+  font-size: small;
+  text-align: left;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.bg-purple .container-fluid {
+  background-color: var(--mhdev-main);
+  color: var(--mhdev-white);
+
+}
+
+.container-fluid {
+  padding: 7% 15%;
+  font-size: 0.95rem;
+  color: var(--mhdev-brown);
+  
+}
+
+.bg-purple {
+  background-color: var(--mhdev-main);
+  color: var(--mhdev-white);
+}
+
+/*---- btn Goback Up ---*/
+.btn-goback-up {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background:rgba(0, 0, 0, 0.5);
+  border-radius: 35%;
+  z-index: 9999;
+  transition: all .4s ease;
+  margin-right: -60px;
+}
+
+.btn-goback-up a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 35%;
+  text-align: center;
+  color: #E0D3EF;
+}
+
+.btn-goback-up a i {
+  font-size: 1rem;
+  line-height: 40px;
+  color: #E0D3EF;
+}
+
+
+/* Headings */
+.big-heading {
+  font-family: "Anton", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 45px;
+}
+
+.big-desc {
+  font-family: "Anton", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.3rem;
+}
+
+.middle-heading {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 0.08rem;
+  line-height: 1.6;
+  color: var(--mhdev-brown);
+}
+
+/* Title section */
+.row {
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-image {
+  height: 200px;
+  width: 200px;
+  background: var(--mhdev-light-purple);
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--mhdev-white);
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.7rem;
+}
+
+.socials a:hover {
+  font-size: 1.65rem;
+  transition: 0.5s;
+}
+
+.btn-brown {
+  margin-top: 7%;
+  background: var(--mhdev-brown);
+  color: var(--mhdev-white);
+  font-size: 1rem;
+}
+
+.btn-brown:hover {
+  background: var(--mhdev-light-purple);
+  font-size: 1rem;
+}
+
+/* About */
+#about .row {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+}
+
+span {
+  color: var(--mhdev-main);
+  font-weight: 600;
+}
+
+.about-image {
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+}
+
+.about-image img {
+  position: relative;
+  height: 120%;
+  bottom: 22%;
+}
+
+.about-btn {
+  margin-right: auto;
+}
+
+/* Workflow */
+
+.stage-box {
+  padding: 3%;
+}
+
+.stage-title {
+  font-family: "Arvo", sans-serif;
+  font-size: 0.95rem;
+  line-height: 2.5;
+}
+
+.stage-box p {
+  font-size: 0.85rem;
+}
+
+/* Portfolio */
+
+.projects-gallery {
+ /*  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+  justify-content: space-between; */
+}
+
+.projects-gallery .project {
+  cursor: pointer;
+}
+
+.projects-gallery .project img {
+  vertical-align: top;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal video {
+  width: 90%;
+  max-width: 600px;
+}
+
+.modal .btn-close {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  right: 20px;
+  background: var(--mh-purple) ;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .btn-close i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 50px;
+}
+
+/* Services */
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card {
+  border-radius: 3%;
+}
+
+.card-header img {
+  width: 52px;
+}
+
+.card-header h3 {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.card-body h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.card-body h2 span {
+  font-size: 1.25rem;
+  color: #b0b0b6;
+  font-weight: 300;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.ideal {
+  font-size: 0.85rem;
+  color: rgb(182, 8, 106);
+}
+
+/* Contact Me*/
+.contact-data {
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+}
+
+.contact-data i {
+  margin-right: 5px;
+}
+
+
+.contact-data p {
+  margin-bottom: 0;
+}
+
+/* Success */
+#success {
+  flex-grow: 1;
+}
+
+/* Footer */
+#footer.container-fluid {
+  background-color: var(--mhdev-brown);
+  color: var(--mhdev-white);
+  padding: 3% 15%;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--mhdev-white);
+  font-size: 1rem;
+  line-height: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+#footer a:hover {
+  font-size: 1.35rem;
+  transition: 0.5s;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+}
+
+#footer a.flaticon {
+  font-size: 0.65rem;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+@media (max-width: 990px) {
+  #about .row {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  #about .about-image {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .big-heading {
+    font-size: 2.25rem;
+    letter-spacing: 0;
+    margin-top: 30px;
+  }
+
+  .big-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .socials a:hover {
+    font-size: 1.5rem;
+    transition: .5s;
+  }
+}
