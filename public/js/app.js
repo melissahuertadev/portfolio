@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   let btnGobackUp = $("#btnGobackUp");
 
   window.addEventListener("pageshow", () => {
@@ -43,23 +43,6 @@ $(document).ready(function () {
     let sectionOffset = $($(this).attr("href")).offset().top - 95;
 
     $("html, body").stop().animate({ scrollTop: sectionOffset }, 1000);
-  });
-
-  //Portfolio
-  $(".img-project").on("click", function () {
-    let videoPath = $(this).attr("src");
-    let videoSrc = videoPath.slice(0, -3) + "mov";
-
-    console.log(videoSrc);
-    let modal =
-      '<div class="modal" id="modal"><video autoplay> <source src="' +
-      videoSrc +
-      '" type="video/mp4"></video><div class="btn-close" id="btnClose"><i class="fa fa-times" aria-hidden="true"></i></div></div>';
-
-    $("#portfolio").after(modal);
-    $("#btnClose").on("click", function () {
-      $("#modal").remove();
-    });
   });
 
   $(document).on("keyup", function (e) {

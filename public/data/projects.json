@@ -1,0 +1,72 @@
+[
+  {
+    "id": "proj001",
+    "projectName": "Prillare E-commerce",
+    "projectDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers. </br>You can watch the demo above or visit their site <a href='https://www.prillare.pe' target='_blank'>here</a>.",
+    "imgSrc": "img/project-prillare.png",
+    "modalType": "img",
+    "modalPath": "img/project-prillare.png",
+    "category": [
+      {
+        "categoryClass": "badge-light",
+        "categoryName": "E-commerce"
+      },
+      {
+        "categoryClass": "badge-info",
+        "categoryName": "React JS"
+      },
+      {
+        "categoryClass": "badge-secondary",
+        "categoryName": "Node"
+      },
+      {
+        "categoryClass": "badge-success",
+        "categoryName": "MongoDB"
+      }
+    ]
+  },
+  {
+    "id": "proj002",
+    "projectName": "Warmi",
+    "projectDescription": "<strong>Warmi</strong> is a safe space for women, you can find more information or suscribe to the newsletter visiting this <a href='https://melissahuertadev.github.io/warmi-webapp/' target='_blank'>site</a> 😊</br>The current webpage was build with JS and Node, the mobile application is being developed with Flutter.",
+    "imgSrc": "img/project-warmi.png",
+    "modalType": "img",
+    "modalPath": "img/project-warmi.png",
+    "category": [
+      {
+        "categoryClass": "badge-light",
+        "categoryName": "WebPage"
+      },
+      {
+        "categoryClass": "badge-warning",
+        "categoryName": "JS"
+      },
+      {
+        "categoryClass": "badge-secondary",
+        "categoryName": "Node"
+      },
+      {
+        "categoryClass": "badge-info",
+        "categoryName": "Flutter"
+      }
+    ]
+  },
+  {
+    "id": "proj003",
+    "projectName": "Dino Game - JS",
+    "projectDescription": "This game is 100% inspired on the Google's Chrome No Internet connection error Dino T-Rex Runner game. This one of course, is <span>purple✨</span><br/>You can watch the demo above or play it <a href='https://melissahuertadev.github.io/dino-game/' target='_blank'>here</a>.",
+    "imgSrc": "img/project-dinogame.png",
+    "modalType": "mov",
+    "modalPath": "img/project-dinogame.mov",
+    "category": [
+      {
+        "categoryClass": "badge-light",
+        "categoryName": "Game"
+      },
+      {
+        "categoryClass": "badge-warning",
+        "categoryName": "JS"
+      }
+    ]
+  }
+]
