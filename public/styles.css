@@ -175,6 +175,29 @@ h6 {
   font-size: 1rem;
 }
 
+.btn-lilac {
+  margin-top: 7%;
+  background: var(--mhdev-white);
+  border-color: var(--mhdev-brown);
+  color: var(--mhdev-brown);
+  font-size: 1rem;
+}
+
+.btn-lilac:hover {
+  background: var(--mhdev-light-purple);
+  font-size: 1rem;
+}
+
+.page-item .page-link {
+  color: var(--mhdev-main);
+  border-color: var(--mhdev-light-purple);
+}
+
+.page-item.active .page-link {
+  background-color: var(--mhdev-main);
+  border-color: var(--mhdev-light-purple);
+}
+
 /* About */
 #about .row {
   text-align: left;
@@ -253,7 +276,7 @@ span {
   align-items: center;
 }
 
-.modal video {
+.modal video, .modal img {
   width: 90%;
   max-width: 600px;
 }
@@ -309,6 +332,11 @@ span {
 .ideal {
   font-size: 0.85rem;
   color: rgb(182, 8, 106);
+}
+
+/* Blog */
+.post-title {
+  color: var(--mhdev-main);
 }
 
 /* Contact Me*/
