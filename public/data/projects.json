@@ -1,6 +1,6 @@
 [
   {
-    "id": "proj003",
+    "id": "proj002",
     "projectName": "Prillare E-commerce",
     "projectDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers. </br>You can watch the demo above or visit their site <a href='https://prillare-ecommerce.herokuapp.com' target='_blank'>here</a>.",
     "imgSrc": "img/project-prillare.png",
@@ -22,32 +22,6 @@
       {
         "categoryClass": "badge-success",
         "categoryName": "MongoDB"
-      }
-    ]
-  },
-  {
-    "id": "proj002",
-    "projectName": "me 2.0",
-    "projectDescription": "Be your 2.0 version! Improve your productivity, organization, and health. <strong>Me 2.0</strong> is a mobile app include tools such as 6jars, pomodoro, habit trackers and so on. <a href='https://warmi-webapp.herokuapp.com' target='_blank'>Download</a> the app 📱</br>The current webpage was build with JS and Node, the mobile application is being developed with Flutter.",
-    "imgSrc": "img/project-warmi.png",
-    "modalType": "img",
-    "modalPath": "img/project-warmi.png",
-    "category": [
-      {
-        "categoryClass": "badge-light",
-        "categoryName": "WebPage"
-      },
-      {
-        "categoryClass": "badge-warning",
-        "categoryName": "JS"
-      },
-      {
-        "categoryClass": "badge-secondary",
-        "categoryName": "Node"
-      },
-      {
-        "categoryClass": "badge-info",
-        "categoryName": "Flutter"
       }
     ]
   },
