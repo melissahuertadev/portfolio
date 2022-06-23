@@ -9,13 +9,6 @@ const PORT = process.env.PORT || 5000;
 //env variables
 require("dotenv").config();
 
-/**
-
-CLIENT_ID=979007786725-m3v3bncgh7jiuvn46crd86ddim138raj.apps.googleusercontent.com
-CLIENT_SECRET=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
-REFRESH_TOKEN=1//04165eeNnQ99oCgYIARAAGAQSNwF-L9IrVRSZR4G-aC07BaB39U4dlpm6A2SVpFvPwv1GkQ6S0ah_2CgKQ3WMIXaVx9UYrjNWonw
- */
-
 const path = require("path");
 
 //Middleware
