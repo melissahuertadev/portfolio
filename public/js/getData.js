@@ -49,16 +49,14 @@ $(function () {
       }
 
       projectGallery.append(
-        `<div class="col-lg-5 col-md-8 project">
+        `<div class="col-xlg-4 col-lg-5 col-md-6 project">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top img-project" id="${project.id}" alt="${project.projectName}" style="height: 225px; width: 100%; display: block;" src="${project.imgSrc}" data-holder-rendered="true">
+            <img class="card-img-top img-project" id="${project.id}" alt="${project.projectName}" style="width: 100%; display: block;" src="${project.imgSrc}" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text"> ${project.projectDescription}</p>
-              <div class="category">
-                ${projectCategories}
-              </div>
+              <p class="card-text"> ${project.shortDescription}</p>
+              <a class="card-text" href="">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             
             </div>
-            
           </div>
         </div>`
       );
@@ -91,8 +89,6 @@ $(function () {
   function populateSocials(socArr) {
     let socialsSection = $(".socials-links");
 
-    console.log(socialsSection);
-
     $.each(socArr, function (index, social) {
       socialsSection.append(
         `<a target=”_blank” href="${social.url}">
@@ -117,10 +113,10 @@ $(function () {
         $.each(res.items, function (k, item) {
           let src = item["thumbnail"];
 
-          postCard += `<div class="postcard card mb-3 mx-auto mr-5 " style="width: 20rem;">`;
+          postCard += `<div class="postcard card mb-3 mx-auto mr-5" style="width: 20rem;">`;
           postCard += `<img src="${src}" class="card-img-top" alt="Cover image">`;
           postCard += `<div class="card-body">`;
-          postCard += `<h5><a href="${item.link}" class="post-title">${item.title}</a></h5>`;
+          postCard += `<h5><a href="${item.link}" target="_blank" class="post-title">${item.title}</a></h5>`;
           var postText = item.description.replace(/<img[^>]*>/g, "");
           postText = postText.replace("h4", "p");
           postText = postText.replace("h3", "p");
@@ -133,7 +129,7 @@ $(function () {
           );
           postCard += `<p class="card-text">${trimmedString}...</p>`;
 
-          postCard += `<a href="${item.link}" target="_blank" class="btn btn-lilac" >Read More</a>`;
+          postCard += `<a href="${item.link}" target="_blank" class="btn btn-white" >Read More</a>`;
           postCard += "</div></div>";
           return k < 10;
         });

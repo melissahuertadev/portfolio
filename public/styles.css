@@ -6,6 +6,16 @@
   --mhdev-light-purple: #e0d3ef;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +25,13 @@
 body {
   margin: 0;
   height: -webkit-fill-available;
+  color: var(--mhdev-brown);
   font-family: "KoHo", serif;
   font-weight: 400;
   text-align: center;
   min-height: 100vh;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-
   display: flex; 
   flex-direction: column;
 }
@@ -46,14 +56,9 @@ h6 {
   text-align: left;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .bg-purple .container-fluid {
@@ -175,7 +180,7 @@ h6 {
   font-size: 1rem;
 }
 
-.btn-lilac {
+.btn-white {
   margin-top: 7%;
   background: var(--mhdev-white);
   border-color: var(--mhdev-brown);
@@ -183,9 +188,35 @@ h6 {
   font-size: 1rem;
 }
 
-.btn-lilac:hover {
+.btn-white:hover {
+  background: var(--mhdev-brown);
+  border-color: var(--mhdev-white);
+  color: var(--mhdev-white);
+}
+
+.btn-lilac {
+  margin-top: 7%;
   background: var(--mhdev-light-purple);
+  border-color: var(--mhdev-main);
+  color: var(--mhdev-main);
   font-size: 1rem;
+}
+
+.btn-lilac:hover {
+  background: var(--mhdev-main);
+  border-color: var(--mhdev-light-purple);
+  color: var(--mhdev-light-purple);
+}
+
+.btn-outline-dark {
+  color: var( --mhdev-brown);
+  border-color: var( --mhdev-brown);
+}
+
+.btn-outline-dark:hover, .btn-outline-dark:active {
+    color: var(--mhdev-beige);
+    background-color: var(--mhdev-brown);
+    border-color: var(--mhdev-brown);
 }
 
 .page-item .page-link {
