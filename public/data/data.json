@@ -1,0 +1,136 @@
+{
+  "workflow": [
+    {
+      "key": "step001",
+      "stepName": "Aware",
+      "stepDescription": "Hellooo! The first step is to know you and your current situation, to be <span>aware</span> of your or your business's problems and needs, so together we can look for the best solution.",
+      "imgSrc": "icons/astronaut.png"
+    },
+    {
+      "key": "step002",
+      "stepName": "Land",
+      "stepDescription": "Once we have defined the problem or need, I'll start brainstorming possible solutions and of course if you have already something in mind, that's beyond awesome! So we can finally <span>land the idea</span> that will be turned into app.",
+      "imgSrc": "icons/happy.png"
+    },
+    {
+      "key": "step003",
+      "stepName": "Prototype",
+      "stepDescription": "Great! Now we have our idea landed. I'll share with you some wireframes and after we choose the one that suits you best, it's time for me to show you <span>high fidelity prototype</span> of the app.",
+      "imgSrc": "icons/laptop.png"
+    },
+    {
+      "key": "step004",
+      "stepName": "Develop",
+      "stepDescription": "We are almost there! This step is the most fun for me, since I'll be <span>developing</span> your app and of course you are a huge part of it since I'll need your constant feedback.",
+      "imgSrc": "icons/coding-2.png"
+    },
+    {
+      "key": "step005",
+      "stepName": "Launch",
+      "stepDescription": "We did it! <br> We make your app and in this final step, we will be <span>launching</span> the app to the woooorld! It's time for them to see it.",
+      "imgSrc": "icons/car.png"
+    }
+  ],
+  "projects": 
+    [
+      {
+        "key": "proj02",
+        "id": "proj002",
+        "projectName": "Prillare E-commerce",
+        "projectDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers. </br>You can watch the demo above or visit their site <a href='https://prillare-ecommerce.herokuapp.com' target='_blank'>here</a>.",
+        "imgSrc": "img/project-prillare.png",
+        "modalType": "img",
+        "modalPath": "img/project-prillare.png",
+        "category": [
+          {
+            "categoryClass": "badge-light",
+            "categoryName": "E-commerce"
+          },
+          {
+            "categoryClass": "badge-info",
+            "categoryName": "React JS"
+          },
+          {
+            "categoryClass": "badge-secondary",
+            "categoryName": "Node"
+          },
+          {
+            "categoryClass": "badge-success",
+            "categoryName": "MongoDB"
+          }
+        ]
+      },
+      {
+        "key": "proj01",
+        "id": "proj001",
+        "projectName": "Warmi",
+        "projectDescription": "<strong>Warmi</strong> is a safe space for women, you can find more information or suscribe to the newsletter visiting this <a href='https://warmi-webapp.herokuapp.com' target='_blank'>site</a> 😊</br>The current webpage was build with JS and Node, the mobile application is being developed with Flutter.",
+        "imgSrc": "img/project-warmi.png",
+        "modalType": "mov",
+        "modalPath": "img/project-warmi.mp4",
+        "category": [
+          {
+            "categoryClass": "badge-light",
+            "categoryName": "WebPage"
+          },
+          {
+            "categoryClass": "badge-warning",
+            "categoryName": "JS"
+          },
+          {
+            "categoryClass": "badge-secondary",
+            "categoryName": "Node"
+          },
+          {
+            "categoryClass": "badge-info",
+            "categoryName": "Flutter"
+          }
+        ]
+      },
+      {
+        "key": "proj00",
+        "id": "proj000",
+        "projectName": "Dino Game - JS",
+        "projectDescription": "This game is 100% inspired on the Google's Chrome No Internet connection error Dino T-Rex Runner game. This one of course, is <span>purple✨</span><br/>You can watch the demo above or play it <a href='https://melissahuertadev.github.io/dino-game/' target='_blank'>here</a>.",
+        "imgSrc": "img/project-dinogame.png",
+        "modalType": "mov",
+        "modalPath": "img/project-dinogame.mov",
+        "category": [
+          {
+            "categoryClass": "badge-light",
+            "categoryName": "Game"
+          },
+          {
+            "categoryClass": "badge-warning",
+            "categoryName": "JS"
+          }
+        ]
+      }
+    ],
+  "socials": [
+    {
+      "key": "ss0001",
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/melissahuertadev/",
+      "iconTag": "<i class='fa-brands fa-linkedin'></i>"
+    },
+    {
+      "key": "ss0002",
+      "name": "github",
+      "url": "https://github.com/melissahuertadev",
+      "iconTag": "<i class='fa-brands fa-github'></i>"
+    },
+    {
+      "key": "ss0003",
+      "name": "youtube",
+      "url": "https://www.youtube.com/c/codeandofeliz",
+      "iconTag": "<i class='fa-brands fa-youtube'></i>"
+    },
+    {
+      "key": "ss0004",
+      "name": "medium",
+      "url": "https://medium.com/@melissahuertadev",
+      "iconTag": "<i class='fa-brands fa-medium'></i>"
+    }
+  ]
+}

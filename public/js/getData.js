@@ -1,13 +1,47 @@
 $(function () {
-  //Getting projects info for Portfolio section
-  let projectGallery = $("#project-gallery");
-
   $.ajax({
     type: "GET",
-    url: "../data/projects.json",
+    url: "../data/data.json",
     dataType: "json",
   }).done((data) => {
-    $.each(data, function (index, project) {
+    $.each(data, function (index, item) {
+      switch (index) {
+        case "workflow":
+          populateWorkflow(item);
+          break;
+        case "projects":
+          populateProjects(item);
+          break;
+        case "socials":
+          populateSocials(item);
+          break;
+        default:
+          break;
+      }
+    });
+  });
+
+  //Get workflow steps info for Workflow section
+  function populateWorkflow(workflowSteps) {
+    let workflowSection = $("#workflow-steps");
+
+    $.each(workflowSteps, function (index, step) {
+      workflowSection.append(
+        `<div class="stage-box col-lg-4">
+          <img src="${step.imgSrc}" width="60px">
+          <h3 class="stage-title">${step.stepName}</h3>
+          <p>${step.stepDescription}</p>
+        </div>
+     `
+      );
+    });
+  }
+
+  //Getting projects info for Portfolio section
+  function populateProjects(projArr) {
+    let projectGallery = $("#project-gallery");
+
+    $.each(projArr, function (index, project) {
       let projectCategories = "";
 
       for (let i = 0; i < project.category.length; i++) {
@@ -29,6 +63,7 @@ $(function () {
         </div>`
       );
 
+      //Add modal to each project
       $(`#${project.id}`).on("click", function () {
         let modal = "";
 
@@ -50,7 +85,22 @@ $(function () {
         });
       });
     });
-  });
+  }
+
+  //Populate socials links
+  function populateSocials(socArr) {
+    let socialsSection = $(".socials-links");
+
+    console.log(socialsSection);
+
+    $.each(socArr, function (index, social) {
+      socialsSection.append(
+        `<a target=”_blank” href="${social.url}">
+          ${social.iconTag}
+        </a>`
+      );
+    });
+  }
 
   //Getting medium articles for Blog section
   let mediumPromise = new Promise(function (resolve) {
