@@ -31,121 +31,116 @@
       "imgSrc": "icons/car.png"
     }
   ],
-  "projects": 
-    [
-      {
-        "key": "proj003",
-        "id": "proj003",
-        "projectName": "Prillare E-commerce",
-        "shortDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers.",
-        "demoUrl": "https://prillare-ecommerce.herokuapp.com/",
-        "githubUrl": "https://github.com/codeando-feliz/prillare.pe",
-        "imgSrc": "img/project-prillare.png",
-        "modalType": "img",
-        "modalPath": "img/project-prillare.png",
-        "category": [
-          {
-            "categoryClass": "badge-light",
-            "categoryName": "E-commerce"
-          },
-          {
-            "categoryClass": "badge-info",
-            "categoryName": "React JS"
-          },
-          {
-            "categoryClass": "badge-secondary",
-            "categoryName": "Node"
-          },
-          {
-            "categoryClass": "badge-success",
-            "categoryName": "MongoDB"
-          }
-        ]
-      },
-      {
-        "key": "proj002",
-        "id": "proj002",
-        "projectName": "Amoor App",
-        "shortDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers.",
-        "demoUrl": "https://amoor-app.herokuapp.com",
-        "githubUrl": "https://github.com/melissahuertadev/amoor-app",
-        "imgSrc": "img/project-prillare.png",
-        "modalType": "img",
-        "modalPath": "img/project-prillare.png",
-        "category": [
-          {
-            "categoryClass": "badge-light",
-            "categoryName": "WebPage"
-          },
-          {
-            "categoryClass": "badge-warning",
-            "categoryName": "JS"
-          },
-          {
-            "categoryClass": "badge-danger",
-            "categoryName": "EJS"
-          },
-          {
-            "categoryClass": "badge-secondary",
-            "categoryName": "Node"
-          },
-          {
-            "categoryClass": "badge-success",
-            "categoryName": "MongoDB"
-          }
-        ]
-      },
-      {
-        "key": "proj001",
-        "id": "proj001",
-        "projectName": "Warmi",
-        "shortDescription": "<strong>Warmi</strong> is a safe space for women, you can find more information or suscribe to the newsletter visiting this <a href='https://warmi-webapp.herokuapp.com' target='_blank'>site</a> 😊</br>The current webpage was build with JS and Node, the mobile application is being developed with Flutter.",
-        "demoUrl": "https://warmi-webapp.herokuapp.com",
-        "githubUrl": "https://github.com/melissahuertadev/warmi-webapp",
-        "imgSrc": "img/project-warmi.png",
-        "modalType": "mov",
-        "modalPath": "img/project-warmi.mp4",
-        "category": [
-          {
-            "categoryClass": "badge-light",
-            "categoryName": "WebPage"
-          },
-          {
-            "categoryClass": "badge-warning",
-            "categoryName": "JS"
-          },
-          {
-            "categoryClass": "badge-secondary",
-            "categoryName": "Node"
-          },
-          {
-            "categoryClass": "badge-info",
-            "categoryName": "Flutter"
-          }
-        ]
-      },
-      {
-        "key": "proj000",
-        "id": "proj000",
-        "projectName": "Dino Game - JS",
-        "shortDescription": "This game is 100% inspired on the Google's Chrome No Internet connection error Dino T-Rex Runner game. This one of course, is <span>purple✨</span>",
-        "demoUrl": "https://melissahuertadev.github.io/dino-game/",
-        "githubUrl": "https://github.com/melissahuertadev/dino-game",
-        "imgSrc": "img/project-dinogame.png",
-        "modalType": "mov",
-        "modalPath": "img/project-dinogame.mov",
-        "category": [
-          {
-            "categoryClass": "badge-light",
-            "categoryName": "Game"
-          },
-          {
-            "categoryClass": "badge-warning",
-            "categoryName": "JS"
-          }
-        ]
-      }
-    ],
+  "projects": {
+    "proj003": {
+      "key": "proj003",
+      "name": "Prillare E-commerce",
+      "shortDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers.",
+      "demoUrl": "https://prillare-ecommerce.herokuapp.com/",
+      "githubUrl": "https://github.com/codeando-feliz/prillare.pe",
+      "imgSrc": "../img/project-prillare.png",
+      "modalType": "img",
+      "modalPath": "img/project-prillare.png",
+      "category": [
+        {
+          "categoryClass": "badge-light",
+          "categoryName": "E-commerce"
+        },
+        {
+          "categoryClass": "badge-info",
+          "categoryName": "React JS"
+        },
+        {
+          "categoryClass": "badge-secondary",
+          "categoryName": "Node"
+        },
+        {
+          "categoryClass": "badge-success",
+          "categoryName": "MongoDB"
+        }
+      ]
+    },
+    "proj002": {
+      "key": "proj002",
+      "name": "Amoor App",
+      "shortDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers.",
+      "demoUrl": "https://amoor-app.herokuapp.com",
+      "githubUrl": "https://github.com/melissahuertadev/amoor-app",
+      "imgSrc": "../img/project-prillare.png",
+      "modalType": "img",
+      "modalPath": "img/project-prillare.png",
+      "category": [
+        {
+          "categoryClass": "badge-light",
+          "categoryName": "WebPage"
+        },
+        {
+          "categoryClass": "badge-warning",
+          "categoryName": "JS"
+        },
+        {
+          "categoryClass": "badge-danger",
+          "categoryName": "EJS"
+        },
+        {
+          "categoryClass": "badge-secondary",
+          "categoryName": "Node"
+        },
+        {
+          "categoryClass": "badge-success",
+          "categoryName": "MongoDB"
+        }
+      ]
+    },
+    "proj001": {
+      "key": "proj001",
+      "name": "Warmi",
+      "shortDescription": "<strong>Warmi</strong> is a safe space for women, you can find more information or suscribe to the newsletter visiting this <a href='https://warmi-webapp.herokuapp.com' target='_blank'>site</a> 😊</br>The current webpage was build with JS and Node, the mobile application is being developed with Flutter.",
+      "demoUrl": "https://warmi-webapp.herokuapp.com",
+      "githubUrl": "https://github.com/melissahuertadev/warmi-webapp",
+      "imgSrc": "../img/project-warmi.png",
+      "modalType": "mov",
+      "modalPath": "img/project-warmi.mp4",
+      "category": [
+        {
+          "categoryClass": "badge-light",
+          "categoryName": "WebPage"
+        },
+        {
+          "categoryClass": "badge-warning",
+          "categoryName": "JS"
+        },
+        {
+          "categoryClass": "badge-secondary",
+          "categoryName": "Node"
+        },
+        {
+          "categoryClass": "badge-info",
+          "categoryName": "Flutter"
+        }
+      ]
+    },
+    "proj000": {
+      "key": "proj000",
+      "name": "Dino Game - JS",
+      "shortDescription": "This game is 100% inspired on the Google's Chrome No Internet connection error Dino T-Rex Runner game. This one of course, is <span>purple✨</span>",
+      "demoUrl": "https://melissahuertadev.github.io/dino-game/",
+      "githubUrl": "https://github.com/melissahuertadev/dino-game",
+      "imgSrc": "../img/project-dinogame.png",
+      "modalType": "mov",
+      "modalPath": "img/project-dinogame.mov",
+      "category": [
+        {
+          "categoryClass": "badge-light",
+          "categoryName": "Game"
+        },
+        {
+          "categoryClass": "badge-warning",
+          "categoryName": "JS"
+        }
+      ]
+    }
+  },
   "socials": [
     {
       "key": "ss0001",

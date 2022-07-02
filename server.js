@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const { body, validationResult, sanitizeBody } = require("express-validator");
 
 const app = express();
-
 const PORT = process.env.PORT || 5000;
 
 //env variables
@@ -14,20 +13,40 @@ const path = require("path");
 //Middleware
 app.use(express.static("public"));
 app.use("/files", express.static(__dirname + "public/files"));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-//enable applications on different hosts
+//Enable applications on different hosts
 const cors = require("cors");
 app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//nodemailer config
+/******************* Routes *******************/
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+//Getting data from json file  ~ TODO: update to BD
+const data = require("./public/data/data.json");
+const projectData = data["projects"];
+
+//Render single project page
+app.get("/p/:projectId", (req, res) => {
+  const { projectId } = req.params;
+  const data = projectData[projectId];
+  
+  if (data){
+    res.render("project", { project: data });
+  } else {
+    res.render("404");
+  }
+});
+
+
+/******************* Nodemailer *******************/
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
 
 app.post(
   "/sendmail",
@@ -93,14 +112,19 @@ app.post(
     }
 
     send()
-      .then((result) => res.sendFile(path.join(__dirname, "./public/success.html")))
+      .then((result) => res.render("success"))
       .catch((error) => {
-        console.log(error.message);
         res.json({ status: "FAILED", message: "An error occurred" });
     });
   }
 );
 
+/******************* 404 *******************/
+app.get("*", (req, res) => {
+  res.render("404");
+});
+
+/*************** Starting Server ***************/
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server started on port ${PORT}`);
 });
