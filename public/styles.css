@@ -275,22 +275,14 @@ span {
 }
 
 /* Portfolio */
-
-.projects-gallery {
- /*  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 34px;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
-  justify-content: space-between; */
-}
-
 .projects-gallery .project {
   cursor: pointer;
 }
 
 .projects-gallery .project img {
   vertical-align: top;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* modal */
@@ -340,6 +332,11 @@ span {
 
 .card-header img {
   width: 52px;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(.25rem - -6px);
+  border-top-right-radius: calc(.25rem - -6px);
 }
 
 .card-header h3 {

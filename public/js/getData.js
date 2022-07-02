@@ -1,7 +1,7 @@
 $(function () {
   $.ajax({
     type: "GET",
-    url: "../data/data.json",
+    url: "./data/data.json",
     dataType: "json",
   }).done((data) => {
     $.each(data, function (index, item) {
@@ -60,6 +60,22 @@ $(function () {
           </div>
         </div>`
       );
+
+           /*  
+       All categories
+        <div class="category">
+                ${projectCategories}
+              </div> 
+              
+               <div>
+              <a class="btn btn-white" href="${project.githubUrl}" target="_blank" role="button">
+                See code <i class="fa-brands fa-github-alt"></i> 
+              </a>
+              <a class="btn btn-lilac" href="${project.demoUrl}" target="_blank" role="button">
+                Visit site <i class="fa-solid fa-rocket"></i>
+              </a>
+              </div>
+              */
 
       //Add modal to each project
       $(`#${project.id}`).on("click", function () {
