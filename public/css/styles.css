@@ -384,7 +384,7 @@ span {
 }
 
 /* Success */
-#success {
+#success, .project-template {
   flex-grow: 1;
 }
 
