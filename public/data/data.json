@@ -63,12 +63,12 @@
     "proj002": {
       "key": "proj002",
       "name": "Amoor App",
-      "shortDescription": "<strong>Prillare</strong> is a local small business, with the creation of their e-commerce, we managed to get them to offer a better service and connect more with their customers.",
+      "shortDescription": "Amoor-app is dedicated to all the people who love to share their \"amoors\" with the world :) But instead of writing your names on a wall or putting a lock around a bridge, now you can share your \"amoor\" on the web.",
       "demoUrl": "https://amoor-app.herokuapp.com",
       "githubUrl": "https://github.com/melissahuertadev/amoor-app",
-      "imgSrc": "../img/project-prillare.png",
+      "imgSrc": "../img/project-amoorapp.png",
       "modalType": "img",
-      "modalPath": "img/project-prillare.png",
+      "modalPath": "img/project-amoorapp.png",
       "category": [
         {
           "categoryClass": "badge-light",
