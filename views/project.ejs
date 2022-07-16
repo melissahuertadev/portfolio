@@ -11,8 +11,12 @@
                         
                         <!-- Main img -->
                         <div class="category">
-                            <% for(let i = 0; i < project.category.length; i++) {%>
-                                <span class="badge <%= project.category[i].categoryClass %>"><%= project.category[i].categoryName %></span>
+                            <% console.log(project.category);%>
+
+                            <span class="badge <%= project.category.class %>"><%= project.category.name %></span>
+
+                            <% for(let i = 0; i < project.technologies.length; i++) {%>
+                                <span class="badge <%= project.technologies[i].class %>"><%= project.technologies[i].name %></span>
                             <% }%>
                         </div>
                     </div>
@@ -32,3 +36,6 @@
         </section>
 
         <%- include('partials/footer') %>
+
+
+        
