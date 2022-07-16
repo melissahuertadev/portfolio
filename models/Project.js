@@ -10,8 +10,8 @@ const projectSchema = new Schema({
     imgSrc: { type: String },
     modalType: { type: String },
     modalPath: { type: String },
-    category: [{ type: Schema.Types.ObjectId, ref: 'Category', default: "" }],
-    technologies: [{ type: Schema.Types.ObjectId, ref: 'Category', default: [] }],
+    category: { type: Schema.Types.ObjectId, ref: 'Category', default: "" },
+    technologies: [{ type: Schema.Types.ObjectId, ref: 'Technology', default: [] }],
 });
 
 const Project = new mongoose.model("Project", projectSchema);

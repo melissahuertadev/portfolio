@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-const TechnologySchema = new mongoose.Schema({
+const CategorySchema = new mongoose.Schema({
     class: String,
     name: String,
 });
 
-const Technology = new mongoose.model("Technology", TechnologySchema);
+const Category = new mongoose.model("Category", CategorySchema);
 
-module.exports = Technology;
+module.exports = Category;
