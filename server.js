@@ -56,7 +56,7 @@ app.get("/p/:projectId", async (req, res) => {
   const { projectId } = req.params;
 
   try {
-    const project = await Project.findOne({key: projectId}).populate('category').populate('technologies');
+    const project = await Project.findById(projectId).populate('category').populate('technologies');
 
     if(!project){
       res.render("404");
