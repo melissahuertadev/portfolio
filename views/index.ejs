@@ -1,171 +1,186 @@
 <%- include('partials/header') %>
 
-<body class="noselect">
-    <div class="btn-goback-up" id="btnGobackUp">
-        <a href="#" class="goback-up">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </a>
-    </div>
-
-    <section class="bg-purple" id="title">
-        <div class="container-fluid">
-            <!-- Nav Bar -->
-            <%- include('partials/navbar') %>
-            <!-- Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="col-title-image">
-                        <img class="title-image" src="img/mhdev-comp.png" alt="iphone-mockup">
-                    </div>
-                    <h1 class="big-heading">Melissa Huerta</h1>
-                    <h2 class="big-desc">Software Developer</h2>
-                    <p>Specialized in turning ideas into apps. 🚀</p>
-                    <div class="socials socials-links">
-                        <!-- Here goes the socials links -->
-                    </div>
-                    <a href="#contact" class="scroll-soft btn btn-brown btn-lg download-button">
-                        Let's make an app!</a>
-
-                </div>
-            </div>
+    <body class="noselect">
+        <div class="btn-goback-up" id="btnGobackUp">
+            <a href="#" class="goback-up">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
         </div>
-    </section>
 
-    <section class="workflow container-fluid" id="workflow">
-        <h2 class="middle-heading">Workflow</h2>
-        <h6>Know more how I do things :]</h6>
-        <div id="workflow-steps" class="row">
-            <!-- Here goes the workflow steps -->
-        </div>
-    </section>
+        <section class="bg-purple" id="title">
+            <div class="container-fluid">
+                <!-- Nav Bar -->
+                <%- include('partials/navbar') %>
+                    <!-- Title -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="col-title-image">
+                                <img class="title-image" src="img/mhdev-comp.png" alt="iphone-mockup">
+                            </div>
+                            <h1 class="big-heading">Melissa Huerta</h1>
+                            <h2 class="big-desc">Software Developer</h2>
+                            <p>Specialized in turning ideas into apps. 🚀</p>
+                            <div class="socials socials-links">
+                                <!-- Here goes the socials links -->
+                            </div>
+                            <a href="#contact" class="scroll-soft btn btn-brown btn-lg download-button">
+                                Let's make an app!</a>
 
-    <section id="about" class="container-fluid">
-        <h2 class="middle-heading">About me</h2>
-        <h6>Know more about me :]</h6>
-        <div class="row">
-            <div class="col-lg-7">
-                <p>Hello world! My name is Melissa Huerta, a professional Software Developer with 3+ years of experience in both
-                    <strong>web</strong> and <strong>mobile</strong> applications. I develop <span>websites</span> with JavaScript, React 
-                    and Node and <span>mobile apps </span>
-                    with Flutter (Dart) and Firebase.<br />
-                    Being an <strong>innovative, perserver</strong> and <strong>rigorous</strong> person has allowed me
-                    to deliver projects fulfilling the expectations.<br />
-                    Work with me if <span>teamwork</span> and <span>communication</span> throughout the 
-                    project are your priorities.<br />
-                    Currently, I’m focused on building landing pages, portfolios, websites for freelancers and small businesses.<br/>
-                    
-                </p>
-            </div>
-            <div class="col-lg-5">
-                <div class="about-image title-image">
-                    <img src="img/mhdev-about.png" alt="mhdev_photo">
-                </div>
-            </div>
-            <div class="about-btn col-lg-3">
-                <a class="btn btn-brown btn-lg download-button" href="./files/HuertaMelissa-DevResume-English.pdf"
-                    download="HuertaMelissa_Resume">
-                    Download CV <i class="fa fa-download" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="container-fluid">
-        <h2 class="middle-heading">Services</h2>
-        <h6>See which services is <span>ideal</span> for you :]</h6>
-
-        <div class="row">
-            <div class="pricing-column col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./icons/arrival.png">
-                        <h3 class="my-0 fw-normal">Landing Page</h3>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h2 class="card-title pricing-card-title price-text">$50.00 <span>$80.00</span></h2>
-                        <p>1 single page</p>
-                        <p>Up to 5 sections</p>
-                        <p>Responsive and Cross-Browser</p>
-                        <p>Can include contact form</p>
-                        <p class="ideal">Ideal for a portfolio or a marketing campaign.</p>
-                        <a href="#contact" class="btn btn-lg btn-block btn-outline-dark" >I want this!</a>
-                    </div>
-                </div>
             </div>
-    </section> 
+        </section>
 
-    <section id="portfolio" class="container-fluid">
-        <h2 class="middle-heading">The portfolio</h2>
-        <h6>Come on! Take a glance of the last projects I had worked on :]</h6>
+        <section class="workflow container-fluid" id="workflow">
+            <h2 class="middle-heading">Workflow</h2>
+            <h6>Know more how I do things :]</h6>
+            <div id="workflow-steps" class="row">
+                <!-- Here goes the workflow steps -->
+            </div>
+        </section>
 
-        <div id="project-gallery" class="row projects-gallery project-cards row">
-          <!--   <div class="text-center">
-                <ul id="filters" class="filters mb-5 mx-auto   ps-0">
-                    <li class="type mb-3 mb-lg-0 active" data-filter="*">All</li>
-                    <li class="type mb-3 mb-lg-0" data-filter=".webapp">Web App</li>
-                    <li class="type mb-3 mb-lg-0" data-filter=".mobileapp">Mobile App</li>
-                    <li class="type mb-3 mb-lg-0" data-filter=".games">Games</li>
-                </ul>
-            </div> -->
+        <%- include('about') %>
 
-            <!-- Here goes the portfolio items -->
-        </div>
-    </section>
+            <section id="services" class="container-fluid">
+                <h2 class="middle-heading">Services</h2>
+                <h6>See which services is <span>ideal</span> for you :]</h6>
 
-    <section id="blog" class="container-fluid">
-        <h2 class="middle-heading">Blog</h2>
-            <h6>My recent posts 📝</h6>
-            <div class="row" id="mediumPosts"></div>
-            <nav>
-                <ul class="pagination justify-content-center" id="pagin"></ul>
-            </nav>
-            <a class="btn btn-brown" href="https://medium.com/@melissahuertadev" target="_blank" role="button">View all posts</a>            
-    </section>
-
-    <section id="contact" class="container-fluid">
-            <h2 class="middle-heading">Let's work</h2>
-            <div class="mb-4">
                 <div class="row">
-                    <div class="col-md-8 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="/sendmail" method="POST">
-                            <div class="form-row justify-content-center">
-                                <div class="col-md-4 mb-4">
-                                    <input type="text" class="form-control form-input" id="name" name="name"
-                                        placeholder="Full name" required>
-                                </div>
-                                <div class="col-md-6 mb-4 ">
-                                    <input type="email" id="email" name="email" class="form-control form-input"
-                                        placeholder="E-mail" required>
-                                </div>
+                    <div class="pricing-column col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="./icons/arrival.png">
+                                <h3 class="my-0 fw-normal">Landing Page</h3>
                             </div>
-                            <div class="form-row justify-content-center">
-                                <div class="col-md-10 mb-4">
-                                    <textarea type="text" id="message" name="message" rows="6" cols="30"
-                                        placeholder="Your message" class="form-control md-textarea form-input"
-                                        required></textarea>
-                                </div>
+                            <div class="card-body">
+                                <h2 class="card-title pricing-card-title price-text">$50.00 <span>$80.00</span></h2>
+                                <p>1 single page</p>
+                                <p>Up to 5 sections</p>
+                                <p>Responsive and Cross-Browser</p>
+                                <p>Can include contact form</p>
+                                <p class="ideal">Ideal for a portfolio or a marketing campaign.</p>
+                                <a href="#contact" class="btn btn-lg btn-block btn-outline-dark">I want this!</a>
                             </div>
-
-                            <input class="btn btn-brown col-md-6" type="submit" value="Send">
-
-                        </form>
+                        </div>
                     </div>
+            </section>
 
-                    <div class="col-md-4 text-center">
-                        <ul class="list-unstyled mb-0">
-                            <li class="contact-data"><i class="fas fa-envelope"></i>
-                                <p>melissahuertadev@gmail.com</p>
-                            </li>
-                            <li class="contact-data"><i class="fas fa-phone"></i>
-                                <p>+ 51 944 235 148</p>
-                            </li>
-                            <li class="contact-data"><i class="fas fa-map-marker-alt"></i>
-                                <p>Lima, 15012, Peru</p>
-                            </li>
-                        </ul>
+            <section id="portfolio" class="container-fluid">
+                <h2 class="middle-heading">The portfolio</h2>
+                <h6>Come on! Take a glance of the last projects I had worked on :]</h6>
+
+                <div id="project-gallery" class="row projects-gallery project-cards row">
+                    <!-- TODO:
+                <div class="text-center">
+                    <ul id="filters" class="filters mb-5 mx-auto   ps-0">
+                        <li class="type mb-3 mb-lg-0 active" data-filter="*">All</li>
+                        <li class="type mb-3 mb-lg-0" data-filter=".webapp">Web App</li>
+                        <li class="type mb-3 mb-lg-0" data-filter=".mobileapp">Mobile App</li>
+                        <li class="type mb-3 mb-lg-0" data-filter=".games">Games</li>
+                    </ul>
+                </div>
+            -->
+
+                    <!-- Portfolio items -->
+                    <% if (projects.length> 0) {
+                        projects.forEach((prj) => { %>
+                        <div class="isotope-item col-md-6 mb-5">
+                            <div class="card project-card">
+                                <div class="row">
+                                    <div class="col-12 col-xl-5 card-img-holder">
+                                        <img src="<%= prj.imgSrc %>" alt="<%= prj.name %>" class="card-img" alt="image">
+                                    </div>
+                                    <div class="col-12 col-xl-7">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/p/<%= prj._id %>"
+                                                    class="theme-link project-link">
+                                                    <%= prj.name %>
+                                                </a></h5>
+                                            <p class="card-text">
+                                                <%- prj.shortDescription %>
+                                            </p>
+                                            <a class="card-text project-link" href="/p/<%= prj._id %>">View project <i
+                                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-mask">
+                                    <a class="link-mask-link" href="/p/<%= prj._id %>"></a>
+                                    <div class="link-mask-text">
+                                        <a class="btn btn-secondary" href="/p/<%= prj._id %>">
+                                            <svg class="svg-inline--fa fa-eye me-2" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="eye" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                                data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z">
+                                                </path>
+                                            </svg>
+                                            <i class="fas fa-eye me-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }); } %>
+                </div>
+            </section>
+
+            <section id="blog" class="container-fluid">
+                <h2 class="middle-heading">Blog</h2>
+                <h6>My recent posts 📝</h6>
+                <div class="row" id="mediumPosts"></div>
+                <nav>
+                    <ul class="pagination justify-content-center" id="pagin"></ul>
+                </nav>
+                <a class="btn btn-brown" href="https://medium.com/@melissahuertadev" target="_blank" role="button">View
+                    all posts</a>
+            </section>
+
+            <section id="contact" class="container-fluid">
+                <h2 class="middle-heading">Let's work</h2>
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-8 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="/sendmail" method="POST">
+                                <div class="form-row justify-content-center">
+                                    <div class="col-md-4 mb-4">
+                                        <input type="text" class="form-control form-input" id="name" name="name"
+                                            placeholder="Full name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4 ">
+                                        <input type="email" id="email" name="email" class="form-control form-input"
+                                            placeholder="E-mail" required>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="col-md-10 mb-4">
+                                        <textarea type="text" id="message" name="message" rows="6" cols="30"
+                                            placeholder="Your message" class="form-control md-textarea form-input"
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                                <input class="btn btn-brown col-md-6" type="submit" value="Send">
+
+                            </form>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li class="contact-data"><i class="fas fa-envelope"></i>
+                                    <p>melissahuertadev@gmail.com</p>
+                                </li>
+                                <li class="contact-data"><i class="fas fa-phone"></i>
+                                    <p>+ 51 944 235 148</p>
+                                </li>
+                                <li class="contact-data"><i class="fas fa-map-marker-alt"></i>
+                                    <p>Lima, 15012, Peru</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </section>
+            </section>
 
-<%- include('partials/footer') %>
+            <%- include('partials/footer') %>
