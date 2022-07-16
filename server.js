@@ -51,15 +51,9 @@ app.get("/", (req, res) => {
   
 });
 
-//Getting data from json file  ~ TODO: update to BD
-const data = require("./public/data/data.json");
-const projectData = data["projects"];
-
-
 //Render single project page
 app.get("/p/:projectId", async (req, res) => {
   const { projectId } = req.params;
-
 
   try {
     const project = await Project.findOne({key: projectId}).populate('category').populate('technologies');
