@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { body, validationResult, sanitizeBody } = require("express-validator");
+const mongoose = require('mongoose');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -22,27 +23,50 @@ app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+/******************* Mongoose *******************/
+const dbUrl = process.env.DB_URL;
+
+mongoose.connect(dbUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+const Project = require("./models/Project");
+const Category = require("./models/Category");
+const Technology = require("./models/Technology");
+
 /******************* Routes *******************/
 app.get("/", (req, res) => {
-  res.render("index");
+  Project.find({ $ne: null }, function (err, foundProjects){
+    if (err) {
+      console.log(err);
+    } else {
+      if (foundProjects.length > 0) {
+        res.render("index", { projects: foundProjects });
+      } else {
+        res.render("index", { projects: []});
+      }
+    }
+  });
 });
-
-//Getting data from json file  ~ TODO: update to BD
-const data = require("./public/data/data.json");
-const projectData = data["projects"];
 
 //Render single project page
-app.get("/p/:projectId", (req, res) => {
+app.get("/p/:projectId", async (req, res) => {
   const { projectId } = req.params;
-  const data = projectData[projectId];
-  
-  if (data){
-    res.render("project", { project: data });
-  } else {
-    res.render("404");
+
+  try {
+    const project = await Project.findById(projectId).populate('category').populate('technologies');
+
+    if(!project){
+      res.render("404");
+    } else {
+      res.render("project", { project });
+    }
+
+  } catch(err){
+    console.log(err);
   }
 });
-
 
 /******************* Nodemailer *******************/
 const nodemailer = require("nodemailer");
