@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
       className="p-2 rounded-full border border-gray-400 hover:scale-105 transition"
       aria-label="Toggle Dark Mode"
     >
-      {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+      {darkMode ? <FaSun /> : <FaMoon />}
     </button>
   );
 }
