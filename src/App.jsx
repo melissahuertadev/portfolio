@@ -1,11 +1,14 @@
-import './App.css'
+import { useThemeStore } from './store/themeStore';
+import DarkModeToggle from './components/DarkModeToggle';
 
 function App() {
+  const { darkMode } = useThemeStore();
+
   return (
-    <>
-      <h1>Hola, soy Melissa 🚀</h1>
-    </>
-  )
+      <div className="bg-red-500 text-white min-h-screen flex items-center justify-center">
+        <h1 className="text-4xl font-bold">Tailwind funciona ✅</h1>
+      </div>
+    )
 }
 
 export default App
