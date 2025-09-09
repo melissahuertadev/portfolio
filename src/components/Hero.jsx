@@ -8,8 +8,8 @@ function Hero({ darkMode }) {
         className="flex flex-col items-center justify-center text-center min-h-screen px-4"
         style={{
             background: darkMode
-            ? 'linear-gradient(135deg, #4A3BA6, #1F1F3F)'
-            : 'linear-gradient(135deg, #7356C9, #4A6CF7)',
+            ? `linear-gradient(135deg, ${COLORS.darkGradientStart}, ${COLORS.darkGradientEnd})`
+            : `linear-gradient(135deg, ${COLORS.primary}, ${COLORS.gradientEnd}`,
         }}
         id="hero"
     >
