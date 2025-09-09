@@ -1,20 +1,29 @@
 import { useThemeStore } from './store/themeStore';
 import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+//import About from './components/About';
+//import Projects from './components/Projects';
+//import Contact from './components/Contact';
 import DarkModeToggle from './components/DarkModeToggle';
 
 function App() {
   const { darkMode } = useThemeStore();
 
   return (
-       <div className={darkMode ? 'dark bg-gray-900 text-white' : 'bg-white text-gray-900'}>
+       <div className={darkMode ? "dark" : "" }>
+        {/* Contenedor disponible en toda la app */}
+        <div className="min-h-screen font-sans transition-colors duration-500
+                      bg-white dark:bg-gray-900
+                      text-gray-900 dark:text-white">
+          <Hero darkMode={darkMode} />
+   
+          <main>
 
-        <header className="flex justify-between items-center p-4">
-          <h1 className="text-xl font-bold">Melissa Huerta</h1>
-          <DarkModeToggle />
-        </header>
+          </main>
+
+           <div className="fixed bottom-4 right-4 z-50">
+            <DarkModeToggle />
+          </div>
+        </div>
       </div>
     )
 }

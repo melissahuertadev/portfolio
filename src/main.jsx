@@ -6,7 +6,11 @@ import Aos from 'aos'
 import './index.css'
 import App from './App.jsx'
 
-Aos.init();
+Aos.init({
+  duration: 800,
+  easing: 'ease-out',
+  once: true,
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
