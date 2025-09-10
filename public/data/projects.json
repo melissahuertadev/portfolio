@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "category": "Web",
+        "title": "Amoor-app",
+        "description": "Amoor-app is dedicated to all the people who love to share their \"amoors\" with the world :) But instead of writing your names on a wall or putting a lock around a bridge, now you can share your \"amoor\" on the web.",
+        "image": "/src/assets/amoors.png",
+        "stack": ["JS", "EJS", "Node", "MongoDB"],
+        "link": "https://amoor-app.onrender.com/"
+    },
+    {
+        "id": 2,
+        "category": "Games",
+        "title": "Cupid",
+        "description": "A decision-making game with unexpected twists and turns where every match can surprise you. Explore relationships and uncover unique stories as you progress.",
+        "image": "/src/assets/cupid.png",
+        "stack": ["Godot", "GDScript"],
+        "link": "https://shiara0312.itch.io/cupid-encuentra-a-tu-pareja-ideal"
+    },
+    {
+        "id": 3,
+        "category": "Games",
+        "title": "Isaac's Pastry & Apples",
+        "description": "Become Newton and serve your guests by choosing and preparing the perfect recipe for their mood. A touch of physics and fun in every dish!",
+        "image": "/src/assets/isaacs.png",
+        "stack": ["Godot", "GDScript"],
+        "link": "https://shiara0312.itch.io/isaacs-pastry-and-apples"
+    }
+]

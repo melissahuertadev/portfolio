@@ -1,7 +1,7 @@
 import { useThemeStore } from './store/themeStore';
 import Hero from './components/Hero';
 import About from './components/About';
-//import Projects from './components/Projects';
+import Projects from './components/Projects';
 //import Contact from './components/Contact';
 import DarkModeToggle from './components/DarkModeToggle';
 
@@ -16,9 +16,8 @@ function App() {
                       text-gray-900 dark:text-white">
           <Hero darkMode={darkMode} />
           <About darkMode={darkMode} />
-         {/*  <Projects darkMode={darkMode} />        
-          <Contact darkMode={darkMode} />  */}
-          
+          <Projects darkMode={darkMode} />        
+         {/*  <Contact darkMode={darkMode} /> */}
           <div className="fixed bottom-4 right-4 z-50">
             <DarkModeToggle />
           </div>
