@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 //import Contact from './components/Contact';
-import DarkModeToggle from './components/DarkModeToggle';
+import DarkModeToggle from './components/buttons/DarkModeToggle';
 
 function App() {
   const { darkMode } = useThemeStore();

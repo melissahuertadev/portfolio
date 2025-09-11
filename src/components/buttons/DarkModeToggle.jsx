@@ -1,4 +1,4 @@
-import { useThemeStore } from "../store/themeStore";
+import { useThemeStore } from "../../store/themeStore";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const DarkModeToggle = () => {
@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
       className="p-2 rounded-full border border-gray-400 hover:scale-105 transition"
       aria-label="Toggle Dark Mode"
     >
-      {darkMode ? <FaSun /> : <FaMoon />}
+      {darkMode ? <FaSun className="text-white" /> : <FaMoon />}
     </button>
   );
 }
