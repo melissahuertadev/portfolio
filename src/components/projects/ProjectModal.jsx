@@ -7,7 +7,7 @@ function ProjectModal({ project, darkMode, onClose }) {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-            <div className="bg-white dark:bg-[#2A2A3A] rounded-lg max-w-2xl w-full p-6 relative"
+            <div className="bg-white dark:bg-[#2A2A3A] rounded-lg w-11/12 sm:w-3/4 lg:w-1/2 p-6 relative"
                 style={{ backgroundColor: bgColor }}>
                 {/* Close Button */}
                 <button
@@ -77,7 +77,7 @@ function ProjectModal({ project, darkMode, onClose }) {
                                 {project.codeLink && (
                                     <GenericButton
                                     onClick={() => window.open(project.codeLink, "_blank")}
-                                    className="bg-stone-100"
+                                    className="bg-stone-100 text-gray-900 dark:text-gray-900"
                                     >
                                         <FaGithub /> See Code
                                     </GenericButton>
