@@ -11,7 +11,7 @@ function App() {
   return (
        <div className={darkMode ? "dark" : "" }>
         {/* Contenedor disponible en toda la app con scroll-snap */}
-        <div className="snap-y snap-mandatory scroll-smooth
+        <div className="scroll-smooth
                       font-sans transition-colors duration-500
                       bg-white dark:bg-gray-900
                       text-gray-900 dark:text-white">

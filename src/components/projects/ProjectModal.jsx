@@ -1,3 +1,4 @@
+import ReactDOM from "react-dom";
 import { FaGlobe, FaGithub, FaYoutube, FaBook } from "react-icons/fa";
 import GenericButton from "../buttons/GenericButton";
 import { COLORS } from "../../theme";
@@ -5,7 +6,7 @@ import { COLORS } from "../../theme";
 function ProjectModal({ project, darkMode, onClose }) {
     const bgColor = darkMode ? COLORS.darkCardBackground : COLORS.background;
 
-    return (
+    const modalContent = (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
             <div className="bg-white dark:bg-[#2A2A3A] rounded-lg w-11/12 sm:w-3/4 lg:w-1/2 p-6 relative"
                 style={{ backgroundColor: bgColor }}>
@@ -87,6 +88,10 @@ function ProjectModal({ project, darkMode, onClose }) {
                     </div>
                    </div>
                 </div>
-            )}
+            )
+
+        // ReactDOM.createPortal hace que el modal se monte en el <body> y el fixed inset-0 abarque toda la ventana, no solo en el grid.
+        return ReactDOM.createPortal(modalContent, document.body);
+        }
 
 export default ProjectModal;

@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState} from "react";
 import { COLORS } from "../../theme";
 import GenericButton from "../buttons/GenericButton";
 import ProjectModal from "./ProjectModal";
 
 function ProjectCard({ project, darkMode }) {
     const [open, setOpen] = useState(false);
-     const bgColor = darkMode ? COLORS.darkCardBackground : COLORS.background;
-
+    const bgColor = darkMode ? COLORS.darkCardBackground : COLORS.background;
+     
     return (
         <>
             {/* Card */}
             <div
                 key={project.id}
                 className="rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
-                style={{ backgroundColor: bgColor }} 
+                style={{ backgroundColor: bgColor }}
             >
                 <img
                     src={project.image}

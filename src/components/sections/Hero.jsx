@@ -5,7 +5,7 @@ import SocialButton from "../buttons/SocialButton";
 function Hero({ darkMode }) {
   return (
     <section
-        className="h-screen snap-start flex flex-col items-center justify-center text-center px-4"
+        className="h-screen snap-start box-border flex flex-col items-center justify-center text-center px-4"
         style={{
             background: darkMode
             ? `linear-gradient(135deg, ${COLORS.darkGradientStart}, ${COLORS.darkGradientEnd})`

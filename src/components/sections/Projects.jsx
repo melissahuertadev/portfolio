@@ -25,13 +25,13 @@ function Projects({ darkMode }) {
     return (
         <section 
             id="projects"
-            className="h-screen snap-start py-12 px-6 md:px-20 transition-colors duration-500"
+            className="min-h-screen px-6 md:px-20 transition-colors duration-500"
             style={{ backgroundColor: bgColor, color: textColor }} 
         >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 pt-6" data-aos="fade-right">Featured Projects</h2>
             <div className="flex flex-col md:flex-row">
                 {/* Tabs */}
-                <div className="flex md:flex-col gap-4 mb-6 md:mb-0 md:mr-8">
+                <div className="flex md:flex-col gap-4 mb-6 md:mb-0 md:mr-8" data-aos="fade-right">
                     {CATEGORIES.map((category) => (
                         <button
                             key={category}
@@ -48,7 +48,7 @@ function Projects({ darkMode }) {
                     ))}
                 </div>
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1" data-aos="fade-up">
                     {filteredProjects.map((project) => (
                         <ProjectCard key={project.id} project={project} darkMode={darkMode} />
                     ))}

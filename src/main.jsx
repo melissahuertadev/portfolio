@@ -9,7 +9,9 @@ import App from './App.jsx'
 Aos.init({
   duration: 800,
   easing: 'ease-out',
-  once: true,
+  once: false,
+  mirror: true,
+  offset: 0,
 });
 
 createRoot(document.getElementById('root')).render(

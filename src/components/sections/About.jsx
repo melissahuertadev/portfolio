@@ -8,14 +8,14 @@ function About({darkMode}) {
   return (
     <section
         id="about"
-        className="h-screen snap-start flex items-center justify-center flex-col md:flex-row py-20 px-6 md:px-20 transition-colors duration-500"
+        className="min-h-screen items-center justify-center flex flex-col md:flex-row px-6 md:px-20"
         style={{ backgroundColor: bgColor, color: textColor }}
-        data-aos="fade-in"
         >
+
             {/* Foto */}
             <div
                 className="mb-6 md:mb-0 md:mr-10 flex-shrink-0"
-                data-aos="fade-in" data-aos-delay="100">
+                data-aos="fade-right">
                 <img
                 src={profilePic}
                 alt="Melissa Huerta"
@@ -24,7 +24,9 @@ function About({darkMode}) {
             </div>
 
             {/* Texto */}
-            <div className="max-w-xl" data-aos="fade-in" data-aos-delay="200">
+            <div className="max-w-xl"
+            data-aos="fade-left"
+        data-aos-delay="200">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">About me</h2>
                 <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                     Hi! I'm Melissa, a Software Developer and Game Creator passionate about
