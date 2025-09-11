@@ -5,14 +5,18 @@ const baseButtonClasses = `
   hover:scale-105 hover:shadow-md
 `;
 
-function GenericButton({ onClick, children, className = "" }) {
+function GenericButton(props) {
+    const { as: Component = "button", onClick, children, className = "", style = {}, ...rest } = props;
+
     return (
-        <button 
+        <Component 
             onClick={onClick} 
             className={`${baseButtonClasses} ${className}`}
-            >
+            style={style}
+            {...rest}
+        >
             {children}
-        </button>
+        </Component>
     );
 }
 
