@@ -1,6 +1,6 @@
-import { COLORS } from "../theme";
+import { COLORS } from "../../theme";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import SocialButton from "./buttons/SocialButton";
+import SocialButton from "../buttons/SocialButton";
 
 function Hero({ darkMode }) {
   return (

@@ -1,7 +1,7 @@
 import { useThemeStore } from './store/themeStore';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
 //import Contact from './components/Contact';
 import DarkModeToggle from './components/buttons/DarkModeToggle';
 

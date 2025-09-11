@@ -1,5 +1,5 @@
-import { COLORS } from "../theme"; // si quieres usar constantes de color
-import profilePic from "../assets/profile.png";
+import { COLORS } from "../../theme.js"
+import profilePic from "../../assets/profile.png";
 
 function About({darkMode}) {
     const bgColor = darkMode ? COLORS.darkGradientEnd : COLORS.background;

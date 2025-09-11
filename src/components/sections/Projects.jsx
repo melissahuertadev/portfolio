@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { COLORS } from '../theme';
-import { useProjectsStore } from '../store/projectsStore';
-import ProjectCard from './projects/ProjectCard';
+import { COLORS } from '../../theme';
+import { useProjectsStore } from '../../store/projectsStore';
+import ProjectCard from '../projects/ProjectCard';
 
 const CATEGORIES = ['Web', 'Games', 'Showcase'];
 
