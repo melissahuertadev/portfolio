@@ -1,13 +1,19 @@
-function SocialButton({ href, icon, label, bgLight, bgDark }) {
+import GenericButton from "./GenericButton"; 
+
+function SocialButton({ href, icon, label, bgLight, bgDark, hoverGlow }) {
     const IconComponent = icon;
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer"
-       className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-shadow duration-300
-                  ${bgLight} text-white hover:shadow-[0_0_20px_8px_rgba(240,200,250,0.4)]
-                  dark:${bgDark} dark:hover:shadow-[0_0_20px_8px_rgba(115,86,201,0.8)]`}>
-      <IconComponent /> {label}
-    </a>
+    <GenericButton
+      as="a"
+      href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${bgLight} dark:${bgDark} text-white`}
+        style={hoverGlow ? {} : undefined}
+      >
+        <IconComponent className="text-lg" /> {label}
+    </GenericButton>
   );
 }
 

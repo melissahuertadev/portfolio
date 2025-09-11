@@ -1,12 +1,16 @@
-import { COLORS } from '../../theme';
+const baseButtonClasses = `
+  px-4 py-2 rounded-lg font-medium text-sm
+  flex items-center justify-center gap-2
+  transition-all duration-200
+  hover:scale-105 hover:shadow-md
+`;
 
 function GenericButton({ onClick, children, className = "" }) {
     return (
         <button 
             onClick={onClick} 
-            className={`px-4 py-2 text-white rounded-md hover:${COLORS.primary} transition-colors duration-300 ${className}`}
-            style={{backgroundColor: COLORS.secondary, color: COLORS.background}}
-        >
+            className={`${baseButtonClasses} ${className}`}
+            >
             {children}
         </button>
     );
