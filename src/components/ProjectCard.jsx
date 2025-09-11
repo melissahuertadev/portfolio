@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { COLORS } from "../theme";
 import { FaGlobe, FaGithub, FaYoutube, FaBook } from "react-icons/fa";
-import GenericButton from "./botones/GenericButton";
+import GenericButton from "./buttons/GenericButton";
 
 function ProjectCard({ project, darkMode }) {
     const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ function ProjectCard({ project, darkMode }) {
                 <div
                     className={`px-4 py-3 border-t-2 ${
                         project.category === "Web"
-                            ? "border-stone-500"
+                            ? "border-stone-400"
                             : project.category === "Games"
                             ? "border-purple-500"
                             : "border-sky-500"
@@ -33,7 +33,8 @@ function ProjectCard({ project, darkMode }) {
                     <p className="text-sm mb-2" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                     <GenericButton
                         onClick={() => setOpen(true)}
-                        className="text-sm font-semibold bg-[#3B5BDB] hover:underline"
+                        className="text-white flex items-center gap-2"
+                        style={{ backgroundColor: COLORS.secondary }}
                     >
                         View More
                     </GenericButton>
@@ -47,7 +48,7 @@ function ProjectCard({ project, darkMode }) {
                     {/* Close Button */}
                     <button
                         onClick={() => setOpen(false)}
-                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+                        className="absolute top-2 right-2 text-gray-500 "
                     >
                         x
                     </button>
@@ -83,18 +84,18 @@ function ProjectCard({ project, darkMode }) {
                     <div className="flex gap-3">
                         {project.category === "Showcase" ? (
                             <>
-                            <p>
-                                </p>
                                 <GenericButton
                                     onClick={() => window.open(project.link, "_blank")}
-                                    className="bg-[#3B5BDB] text-white flex items-center gap-2"
+                                    className="text-white"
+                                    style={{ backgroundColor: COLORS.secondary }}
                                 >
                                     <FaYoutube /> View Playlist
                                 </GenericButton>
                                 {project.articleLink && (
                                     <GenericButton
                                     onClick={() => window.open(project.articleLink, "_blank")}
-                                    className="bg-gray-500 text-white flex items-center gap-2"
+                                    className="text-white"
+                                    style={{ backgroundColor: COLORS.secondary }}
                                     >
                                         <FaBook /> Read Article
                                     </GenericButton>
@@ -104,14 +105,15 @@ function ProjectCard({ project, darkMode }) {
                             <>
                                 <GenericButton
                                     onClick={() => window.open(project.link, "_blank")}
-                                    className="bg-[#3B5BDB] text-white flex items-center gap-2"
+                                    className="text-white"
+                                    style={{ backgroundColor: COLORS.secondary }}
                                 >
                                     <FaGlobe /> Visit Site
                                 </GenericButton>
                                 {project.codeLink && (
                                     <GenericButton
                                     onClick={() => window.open(project.codeLink, "_blank")}
-                                    className="bg-gray-500 text-white flex items-center gap-2"
+                                    className="bg-stone-100"
                                     >
                                         <FaGithub /> See Code
                                     </GenericButton>
