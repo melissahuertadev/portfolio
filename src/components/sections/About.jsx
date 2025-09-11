@@ -8,7 +8,7 @@ function About({darkMode}) {
   return (
     <section
         id="about"
-        className="flex flex-col md:flex-row items-center justify-center py-20 px-6 md:px-20 min-h-screen transition-colors duration-500"
+        className="h-screen snap-start flex items-center justify-center flex-col md:flex-row py-20 px-6 md:px-20 transition-colors duration-500"
         style={{ backgroundColor: bgColor, color: textColor }}
         data-aos="fade-in"
         >

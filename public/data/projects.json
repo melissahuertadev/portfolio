@@ -40,6 +40,7 @@
         "long_description": "<p>This <strong>Devlog playlist</strong> documents our creative journey as The Glitch Girls. Each episode dives into a specific stage of development: from early mechanics and design iterations to unexpected challenges and wins during game jams.</p><p>It’s a mix of coding, art, storytelling, and a lot of fun. Perfect for anyone curious about how indie games are made!</p>",
         "image": "/src/assets/isaacs.png",
         "stack": ["YouTube"],
-        "link": "https://youtube.com/playlist?list=PLLA-tvYHpzv3nFxbF1hV8OXNF0UthQX5i&si=qKWjZRXas5DRdzyG"
+        "link": "https://youtube.com/playlist?list=PLLA-tvYHpzv3nFxbF1hV8OXNF0UthQX5i&si=qKWjZRXas5DRdzyG",
+        "embedLink": "https://www.youtube.com/embed/videoseries?list=PLLA-tvYHpzv3nFxbF1hV8OXNF0UthQX5i"
     }
 ]

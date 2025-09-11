@@ -25,7 +25,7 @@ function ProjectModal({ project, darkMode, onClose }) {
                     {project.category === "Showcase" ? (
                         <iframe
                             className="w-full h-64 rounded"     
-                            src={project.link}
+                            src={project.embedLink}
                             title={project.title}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
