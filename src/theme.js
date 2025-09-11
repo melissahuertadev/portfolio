@@ -8,4 +8,5 @@ export const COLORS = {
   gradientEnd: "#4A6CF7",    // para el gradiente del hero
   darkGradientStart: "#4A3BA6", // dark mode gradiente
   darkGradientEnd: "#1F1F3F",   // dark mode gradiente
+  darkCardBackground: "#3e3e7b9f",   // dark mode gradiente
 };

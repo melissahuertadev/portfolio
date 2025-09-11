@@ -3,11 +3,14 @@ import { COLORS } from '../theme';
 import { useProjectsStore } from '../store/projectsStore';
 import ProjectCard from './ProjectCard';
 
-const CATEGORIES = ['Web', 'Games', 'Creative'];
+const CATEGORIES = ['Web', 'Games', 'Showcase'];
 
 function Projects({ darkMode }) {
     const { selectedTab, setSelectedTab } = useProjectsStore();
     const [projects, setProjects] = useState([]);
+
+    const bgColor = darkMode ? COLORS.darkGradientEnd : COLORS.background;
+    const textColor = darkMode ? COLORS.background : COLORS.text;
 
     useEffect(() => {
         fetch("/data/projects.json")
@@ -22,7 +25,8 @@ function Projects({ darkMode }) {
     return (
         <section 
             id="projects"
-            className={`py-12 px-6 md:px-20 transition-colors duration-500 ${darkMode ? "bg-[#1F1F3F] text-[#F8F8F8]" : "bg-[#F8F8F8] text-[#616063]"}`} 
+            className="min-h-screen py-12 px-6 md:px-20 transition-colors duration-500"
+            style={{ backgroundColor: bgColor, color: textColor }} 
         >
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Featured Projects</h2>
             <div className="flex flex-col md:flex-row">
