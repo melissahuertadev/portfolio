@@ -3,7 +3,8 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import TechStack from './components/sections/TechStack';
-//import Contact from './components/Contact';
+import Contact from './components/sections/Contact';
+import Footer from './components/sections/Footer';
 import DarkModeToggle from './components/buttons/DarkModeToggle';
 
 function App() {
@@ -20,7 +21,12 @@ function App() {
           <About darkMode={darkMode} />
           <Projects darkMode={darkMode} />
           <TechStack darkMode={darkMode} />      
-         {/*  <Contact darkMode={darkMode} /> */}
+          <section className="min-h-screen flex flex-col scroll-snap-align-start" id="contact-me">
+            <div className="flex-1">
+              <Contact darkMode={darkMode} />
+            </div>
+            <Footer darkMode={darkMode} />
+          </section>
           <div className="fixed bottom-4 right-4 z-50">
             <DarkModeToggle />
           </div>
