@@ -25,7 +25,7 @@ function Projects({ darkMode }) {
     return (
         <section 
             id="projects"
-            className="min-h-screen px-6 md:px-20 transition-colors duration-500"
+            className="min-h-screen px-6 md:px-20 pb-20 transition-colors duration-500"
             style={{ backgroundColor: bgColor, color: textColor }} 
         >
             <h2 className="text-3xl md:text-4xl font-bold mb-8 pt-6" data-aos="fade-right">Featured Projects</h2>
