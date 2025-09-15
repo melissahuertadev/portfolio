@@ -1,5 +1,4 @@
 import { COLORS } from "../../theme.js"
-import profilePic from "../../assets/profile.png";
 
 function About({darkMode}) {
     const bgColor = darkMode ? COLORS.darkGradientEnd : COLORS.background;
@@ -17,7 +16,7 @@ function About({darkMode}) {
                 className="mb-6 md:mb-0 md:mr-10 flex-shrink-0"
                 data-aos="fade-right">
                 <img
-                src={profilePic}
+                src="/profile.png"
                 alt="Melissa Huerta"
                 className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                 />
