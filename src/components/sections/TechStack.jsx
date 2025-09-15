@@ -18,12 +18,12 @@ function TechStack({darkMode}) {
 
     return (
         <section id="stack"
-            className="min-h-screen flex flex-col px-6 md:px-20 transition-colors duration-500"
+            className="min-h-screen flex flex-col justify-center px-6 md:px-20 transition-colors duration-500"
             style={{backgroundColor: bgColor}}
         >
             <h2 className="text-3xl md:text-4xl font-bold mb-8 pt-6 text-white" data-aos="fade-right">Tech Stack</h2>
             {/* bloque de íconos */}
-             <div className="flex-1 flex items-center justify-center">
+             <div className="flex items-center justify-center">
                 <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
                     {icons.map((item, i) => {
                         const Icon = item.Icon;

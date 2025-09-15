@@ -22,9 +22,7 @@ function App() {
           <Projects darkMode={darkMode} />
           <TechStack darkMode={darkMode} />      
           <section className="min-h-screen flex flex-col scroll-snap-align-start" id="contact-me">
-            <div className="flex-1">
-              <Contact darkMode={darkMode} />
-            </div>
+            <Contact darkMode={darkMode} />
             <Footer darkMode={darkMode} />
           </section>
           <div className="fixed bottom-4 right-4 z-50">
