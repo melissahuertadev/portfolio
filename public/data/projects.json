@@ -5,7 +5,7 @@
         "title": "Amoor-app",
         "description": "<strong>Amoor-app</strong> lets you share your love stories in a unique way 💕. Instead of carving names on a wall or locking a bridge, you can now celebrate your <em>Amoor-app</em> online — creative, fun, and timeless.",
         "long_description": "<p><strong>Amoor-app</strong> is a playful web app designed for everyone who believes love should be celebrated and remembered. Inspired by traditions like writing names on walls or placing locks on bridges, <em>Amoor-app</em> transforms those moments into a digital experience.</p><p>Users can create, customize, and share their <em>amoors</em> with the world, turning a fleeting feeling into a permanent, creative expression online.</p>",
-        "image": "/src/assets/amoors.png",
+        "image": "/assets/amoors.png",
         "stack": ["JS", "EJS", "Node", "MongoDB"],
         "link": "https://amoor-app.onrender.com/",
         "codeLink": "https://github.com/melissahuertadev/amoor-app"
@@ -16,7 +16,7 @@
         "title": "Cupid",
         "description": "A decision-making game with unexpected twists and turns where every match can surprise you. Explore relationships and uncover unique stories as you progress.",
         "long_description": "<p><strong>Cupid</strong> is a narrative-driven game that challenges players to explore relationships through unexpected choices. Every decision you make changes the outcome, leading to surprising encounters and hidden stories.</p><p>Discover a world where matches are not just about compatibility, but about unraveling emotions, humor, and the unpredictability of love. Each playthrough feels fresh and encourages replayability.</p>",
-        "image": "/src/assets/cupid.png",
+        "image": "/assets/cupid.png",
         "stack": ["Godot", "GDScript"],
         "link": "https://shiara0312.itch.io/cupid-encuentra-a-tu-pareja-ideal",
         "codeLink": "https://github.com/melissahuertadev/wgj2025-cupid"
@@ -27,7 +27,7 @@
         "title": "Isaac's Pastry & Apples",
         "description": "Become Newton and serve your guests by choosing and preparing the perfect recipe for their mood. A touch of physics and fun in every dish!",
         "long_description": "<p><strong>Isaac's Pastry & Apples</strong> is a lighthearted cooking and strategy game where you step into the shoes of Isaac Newton. Your goal? Satisfy your guests by carefully observing their moods and preparing the recipe that fits them best.</p><p>The game blends humor, physics-inspired interactions, and fast-paced decisions. It’s all about timing, creativity, and the joy of experimenting in the kitchen.</p>",
-        "image": "/src/assets/isaacs.png",
+        "image": "/assets/isaacs.png",
         "stack": ["Godot", "GDScript"],
         "link": "https://sir-isaacs-pastry.netlify.app",
         "codeLink": "https://github.com/shiara0312/SandaGameJam2025"
@@ -38,7 +38,7 @@
         "title": "Devlogs – The Glitch Girls",
         "description": "A YouTube playlist where I share behind-the-scenes of our game development process, from prototypes to final polish.",
         "long_description": "<p>This <strong>Devlog playlist</strong> documents our creative journey as The Glitch Girls. Each episode dives into a specific stage of development: from early mechanics and design iterations to unexpected challenges and wins during game jams.</p><p>It’s a mix of coding, art, storytelling, and a lot of fun. Perfect for anyone curious about how indie games are made!</p>",
-        "image": "/src/assets/isaacs.png",
+        "image": "/assets/isaacs.png",
         "stack": ["YouTube"],
         "link": "https://youtube.com/playlist?list=PLLA-tvYHpzv3nFxbF1hV8OXNF0UthQX5i&si=qKWjZRXas5DRdzyG",
         "embedLink": "https://www.youtube.com/embed/videoseries?list=PLLA-tvYHpzv3nFxbF1hV8OXNF0UthQX5i"
