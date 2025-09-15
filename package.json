@@ -1,27 +1,37 @@
 {
-  "name": "melissahuertadev",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "Melissa Huerta",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "ejs": "^3.1.8",
-    "express": "^4.17.3",
-    "express-validator": "^6.14.0",
-    "googleapis": "^100.0.0",
-    "mongoose": "^6.4.4",
-    "nodemailer": "^6.7.2"
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.9.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "@eslint/js": "^9.33.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.2"
   }
 }
