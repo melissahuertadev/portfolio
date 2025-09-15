@@ -16,7 +16,7 @@ function About({darkMode}) {
                 className="mb-6 md:mb-0 md:mr-10 flex-shrink-0"
                 data-aos="fade-right">
                 <img
-                src="/profile.png"
+                src="/assets/profile.png"
                 alt="Melissa Huerta"
                 className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                 />
